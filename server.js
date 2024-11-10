@@ -10,4 +10,5 @@ const server = app.listen( PORT, () => {
 // process là quy trình trong nodejs, SIGINT nghĩa là khi ctrl + C
 process.on('SIGINT', () => {
     server.close( () => console.log('Exit Server Express'));
+    server.exit(0);
 });

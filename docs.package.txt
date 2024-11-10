@@ -25,4 +25,23 @@ compression
     chức năng: giảm băng thông
 
 
+mongoose:
+    câu lệnh: npm i mongoose
+
+    câu hỏi: có nên đóng kết nối liên tục trong mongoDB hay không ?
+    trả lời: không cần đóng, vì mongoose sử dụng pool quản lý cơ sở dữ liệu
+
+    câu hỏi: pool size (nhóm kết nối) là gì ?
+    trả lời: 
+
+    câu hỏi: lợi ích của pool size ?
+    trả lời:
+
+    câu hỏi: giả sử maxPoolSize = 50, mà có kết nối thứ 51 thì sao ?
+    trả lời: nó sẽ bắt yêu cầu thứ 51 đứng chờ, khi một kết nối trong 50 kết nối ban đầu out ra thì người thứ 51 sẽ nhảy vào
+
+os:
+    giải thích: dùng đếm core
+    lưu ý: có sẵn chỉ cần nhúng vào. vào file check.connect.js (Helpers) xem
+
 curl: curl http://localhost:3055

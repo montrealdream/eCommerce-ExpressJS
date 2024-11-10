@@ -4,12 +4,17 @@ const {default: helmet} = require('helmet');
 const compression = require('compression');
 const app = express();
 
+// const connect_mongodb_level_0 = require('./dbs/init.mongodb.level_0');
+const connect_mongodb = require('./dbs/inti.mongodb');
+
 // init middlewares
 app.use(morgan("dev"));
 app.use(helmet());
 app.use(compression());
 
 // init db
+// connect_mongodb_level_0;
+connect_mongodb;
 
 // init routes
 app.get('/', (req, res, next) => {
