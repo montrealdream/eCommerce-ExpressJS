@@ -44,4 +44,9 @@ os:
     giải thích: dùng đếm core
     lưu ý: có sẵn chỉ cần nhúng vào. vào file check.connect.js (Helpers) xem
 
+dotenv
+    câu lệnh: npm i dotenv
+    
+
 curl: curl http://localhost:3055
+NODE_ENV=pro

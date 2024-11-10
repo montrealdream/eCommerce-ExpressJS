@@ -2,6 +2,7 @@ const express = require('express');
 const morgan = require('morgan');
 const {default: helmet} = require('helmet');
 const compression = require('compression');
+require('dotenv').config();
 const app = express();
 
 // const connect_mongodb_level_0 = require('./dbs/init.mongodb.level_0');
