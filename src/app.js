@@ -13,8 +13,11 @@ app.use(compression());
 
 // init routes
 app.get('/', (req, res, next) => {
-    return res.status(500).json({
-        message: 'Welcome Giang Truong!'
+    const strCompress = 'Hello Giang';
+
+    return res.status(200).json({
+        message: 'Welcome Giang Truong!',
+        metadata: strCompress.repeat(100000)
     });
 });
 
