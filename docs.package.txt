@@ -12,5 +12,17 @@ morgan
         - short: thông báo ngắn bao gồm thời gian phản hồi
         - tiny: ngắn hơn cả short
 
+helmet
+    câu lệnh: npm i helmet --save-dev
+    chức năng: 
+
+    - test helmet: 
+        câu lệnh: curl http://localhost:3055 --include 
+        giải thích: --include dùng để xem các cái header của hệ thống
+
+compression
+    câu lệnh: npm i compression --save-dev
+    chức năng: giảm băng thông
+
 
 curl: curl http://localhost:3055
