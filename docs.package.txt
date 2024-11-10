@@ -1,3 +1,16 @@
 express
     câu lệnh: npm i express --save
     chức năng: framework
+
+morgan
+    câu lệnh: npm i morgan --save-dev
+    chức năng: thư viện in ra các log khi mà người dùng chạy một request
+    giải thích: có 5 chế độ
+        - dev: trạng thái code được tô màu sử dụng cho mục đích phát triển
+        - combined: sử dụng với môi trường products
+        - common: đổ ra nhật ký chung
+        - short: thông báo ngắn bao gồm thời gian phản hồi
+        - tiny: ngắn hơn cả short
+
+
+curl: curl http://localhost:3055
